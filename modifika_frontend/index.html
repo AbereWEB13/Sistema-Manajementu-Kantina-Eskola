@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtor | Real Estate Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- We'll add CSS and JS links later -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Jane Doe Realty</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-button">
+                <button id="contact-popup-btn">Contact Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Real Estate Professional Portfolio</h1>
+                <p>With over 10 years of experience in the real estate market, I help you find the perfect property.</p>
+                <button class="cta-button">View Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/user/user.png" alt="Jane Doe - Real Estate Agent">
+                </div>
+                <div class="about-text">
+                    <h3>Jane Doe</h3>
+                    <h4>Licensed Real Estate Agent</h4>
+                    <p>With a passion for helping clients find their perfect home, I've been serving the greater
+                        metropolitan area for over a decade. My expertise in market trends and negotiation ensures you
+                        get the best deal possible.</p>
+                    <ul class="credentials">
+                        <li>Certified Residential Specialist (CRS)</li>
+                        <li>Accredited Buyer's Representative (ABR)</li>
+                        <li>Top 1% of Agents Nationwide</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Slider -->
+    <section class="featured-properties">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="property-slider">
+                <!-- Property Slide 1 -->
+                <div class="property-slide">
+                    <div class="property-image">
+                        <img src="images/properties/property-1.jpg" alt="Luxury Villa">
+                        <div class="property-price">$1,250,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Villa with Pool</h3>
+                        <p class="property-address">123 Sunset Blvd, Beverly Hills</p>
+                        <div class="property-features">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>4,500 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Slide 2 -->
+                <div class="property-slide">
+                    <div class="property-image">
+                        <img src="images/properties/property-2.jpg" alt="Modern Apartment">
+                        <div class="property-price">$750,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Downtown Apartment</h3>
+                        <p class="property-address">456 Urban St, Downtown</p>
+                        <div class="property-features">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,800 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Slide 3 -->
+                <div class="property-slide">
+                    <div class="property-image">
+                        <img src="images/properties/property-3.jpg" alt="Family Home">
+                        <div class="property-price">$950,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Spacious Family Home</h3>
+                        <p class="property-address">789 Maple Ave, Suburbia</p>
+                        <div class="property-features">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>3,200 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide">Previous</button>
+                <button class="next-slide">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings with Filters -->
+    <section id="properties" class="property-listings">
+        <div class="container">
+            <h2 class="section-title">Property Listings</h2>
+
+            <!-- Filters -->
+            <div class="property-filters">
+                <div class="filter-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type">
+                        <option value="all">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="price-range">Price Range</label>
+                    <select id="price-range">
+                        <option value="all">All Prices</option>
+                        <option value="0-500000">Under $500,000</option>
+                        <option value="500000-1000000">$500,000 - $1,000,000</option>
+                        <option value="1000000-2000000">$1,000,000 - $2,000,000</option>
+                        <option value="2000000+">$2,000,000+</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms">
+                        <option value="all">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+
+                <button id="apply-filters">Apply Filters</button>
+                <button id="reset-filters">Reset</button>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" data-type="house" data-price="1250000" data-beds="5">
+                    <div class="property-image">
+                        <img src="images/properties/property-1.jpg" alt="Luxury Villa">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$1,250,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Villa with Pool</h3>
+                        <p class="property-address">123 Sunset Blvd, Beverly Hills</p>
+                        <div class="property-features">
+                            <span>5 Beds</span>
+                            <span>4 Baths</span>
+                            <span>4,500 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" data-type="apartment" data-price="750000" data-beds="2">
+                    <div class="property-image">
+                        <img src="images/properties/property-2.jpg" alt="Modern Apartment">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$750,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Downtown Apartment</h3>
+                        <p class="property-address">456 Urban St, Downtown</p>
+                        <div class="property-features">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,800 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" data-type="house" data-price="950000" data-beds="4">
+                    <div class="property-image">
+                        <img src="images/properties/property-3.jpg" alt="Family Home">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$950,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Spacious Family Home</h3>
+                        <p class="property-address">789 Maple Ave, Suburbia</p>
+                        <div class="property-features">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>3,200 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card" data-type="condo" data-price="550000" data-beds="2">
+                    <div class="property-image">
+                        <img src="images/properties/property-4.jpg" alt="Waterfront Condo">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$550,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Waterfront Condo</h3>
+                        <p class="property-address">101 Harbor View, Marina District</p>
+                        <div class="property-features">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,400 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card" data-type="villa" data-price="2500000" data-beds="6">
+                    <div class="property-image">
+                        <img src="images/properties/property-5.jpg" alt="Luxury Estate">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$2,500,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Estate with Views</h3>
+                        <p class="property-address">555 Hillside Dr, Bel Air</p>
+                        <div class="property-features">
+                            <span>6 Beds</span>
+                            <span>7 Baths</span>
+                            <span>7,200 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="property-card" data-type="apartment" data-price="450000" data-beds="1">
+                    <div class="property-image">
+                        <img src="images/properties/property-6.jpg" alt="Studio Apartment">
+                        <div class="property-status">For Sale</div>
+                        <div class="property-price">$450,000</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Studio Apartment</h3>
+                        <p class="property-address">202 City Center, Downtown</p>
+                        <div class="property-features">
+                            <span>1 Bed</span>
+                            <span>1 Bath</span>
+                            <span>850 Sq Ft</span>
+                        </div>
+                        <a href="#" class="property-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="location-map">
+        <div class="container">
+            <h2 class="section-title">Our Service Areas</h2>
+            <div class="map-container">
+                <!-- This will be replaced with an actual map in the JS implementation -->
+                <div id="property-map">
+                    <img src="images/maps/map-1.png" alt="Service Area Map">
+                </div>
+                <div class="map-overlay">
+                    <h3>Areas We Serve</h3>
+                    <ul class="service-areas">
+                        <li>Beverly Hills</li>
+                        <li>Bel Air</li>
+                        <li>Santa Monica</li>
+                        <li>Malibu</li>
+                        <li>Downtown</li>
+                        <li>Hollywood Hills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"Jane helped us find our dream home in just three weeks! Her knowledge of the
+                            local market was invaluable, and she negotiated a price well below what we expected to pay."
+                        </div>
+                        <div class="client-info">
+                            <img src="images/clients/client-1.png" alt="John & Sarah Thompson" class="client-image">
+                            <div class="client-details">
+                                <h4>John & Sarah Thompson</h4>
+                                <p>Bought a home in Beverly Hills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"Selling our family home of 25 years was emotional, but Jane made the process
+                            smooth and respectful. She got us $50,000 over asking price!"</div>
+                        <div class="client-info">
+                            <img src="images/clients/client-2.png" alt="Robert Johnson" class="client-image">
+                            <div class="client-details">
+                                <h4>Robert Johnson</h4>
+                                <p>Sold a home in Bel Air</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"As first-time homebuyers, we had a million questions. Jane was patient,
+                            educational, and found us a perfect starter home in our budget. We couldn't be happier!"
+                        </div>
+                        <div class="client-info">
+                            <img src="images/clients/client-3.png" alt="Michael & Lisa Chen" class="client-image">
+                            <div class="client-details">
+                                <h4>Michael & Lisa Chen</h4>
+                                <p>Bought a condo in Downtown</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial">Previous</button>
+                <button class="next-testimonial">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="icon-phone"></i> (555) 123-4567</li>
+                        <li><i class="icon-email"></i> jane@doerealty.com</li>
+                        <li><i class="icon-location"></i> 1234 Real Estate Blvd, Suite 100, Beverly Hills, CA 90210</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest">
+                                <option value="buying">Buying a property</option>
+                                <option value="selling">Selling a property</option>
+                                <option value="renting">Renting a property</option>
+                                <option value="other">Other inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Popup Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Me Now</h2>
+            <p>Fill out this quick form and I'll get back to you within 24 hours.</p>
+            <form id="modal-contact-form">
+                <div class="form-group">
+                    <label for="modal-name">Name</label>
+                    <input type="text" id="modal-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone</label>
+                    <input type="tel" id="modal-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">How can I help you?</label>
+                    <textarea id="modal-message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Jane Doe Realty</h3>
+                    <p>Your trusted partner in real estate since 2010</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for market updates and new listings</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Jane Doe Realty. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- We'll add JavaScript files later -->
+    <script src="script.js"></script>
+</body>
+
+</html>

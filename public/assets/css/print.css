@@ -1,0 +1,74 @@
+/* Hide page on screen, show only in print */
+@media screen {
+  body {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid #000;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .card-header img {
+    height: 100px;
+  }
+
+  .signature-section h4 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 2px solid #000;
+    padding-top: 30px;
+  }
+
+  .signature-section h6 {
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  h3,
+  h6 {
+    margin: 0;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

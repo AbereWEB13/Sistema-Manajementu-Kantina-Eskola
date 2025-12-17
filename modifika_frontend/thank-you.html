@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Downloading</title>
+    <link rel="icon" type="image/png" href="https://html-css-templates.com/themes/basic/images/favicon.png">
+    <style>
+        :root {
+            --primary: #D2F34C;
+            --secondary: #046647;
+            --accent: #06b6d4;
+            --background: #f8fafc;
+            --text: #1e293b;
+            --card-bg: rgba(255, 255, 255, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h1 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.5rem;
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: underline; 
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--secondary);
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .floating-button {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            background: var(--secondary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(4, 102, 71, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-button:hover {
+            background: var(--primary);
+            color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(4, 102, 71, 0.4);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(4, 102, 71, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(4, 102, 71, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(4, 102, 71, 0.3);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .floating-button {
+                right: 20px;
+                bottom: 20px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="https://html-css-templates.com/themes/basic/images/logo-dark.png" alt="Logo" class="logo">
+            </div>
+            <h1>Thank You for Downloading!</h1>
+            <p class="subtitle">We're excited to help you create amazing projects</p>
+        </header>
+
+        <section>
+            <h2>Getting Started</h2>
+            <p>Thank you for choosing our templates and tools. We've created this guide to help you make the most of your download and get started quickly.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Easy Integration</h3>
+                    <p>Our templates are designed to be easily integrated into your existing projects with minimal setup required.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Customizable</h3>
+                    <p>All templates are fully customizable to match your brand's look and feel.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Documentation</h3>
+                    <p>Comprehensive documentation is included to help you understand and modify the templates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Usage Instructions</h2>
+            <p>Follow these simple steps to get started:</p>
+            <ol style="margin-left: 1.5rem;">
+                <li>Extract the downloaded files to your desired location</li>
+                <li>Review the included documentation for specific template details</li>
+                <li>Customize the templates to match your needs</li>
+                <li>Integrate the templates into your project</li>
+                <li>Test thoroughly before deployment</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Support & Resources</h2>
+            <p>We're here to help you succeed with your project. Here are some useful resources:</p>
+            <ul style="margin-left: 1.5rem;">
+                <li>Visit our website for more templates and tools</li>
+                <li> <a href="https://html-css-templates.com/contact-us">Contact our support team</a> for assistance</li>
+                <li>Join our community for tips and discussions</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://html-css-templates.com" class="cta-button">Visit Our Website</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>License Information</h2>
+            <p>This template is provided under our standard license terms. Please review the license file included in your download for detailed <a href="https://html-css-templates.com/terms-of-use">terms and conditions.</a></p>
+        </section>
+
+        <footer>
+            <p>© html-css-templates.com. All rights reserved.</p>
+        </footer>
+    </div>
+    <a href="https://html-css-templates.com/items" class="floating-button">
+         Grab More Templates!
+    </a>
+</body>
+</html> 
