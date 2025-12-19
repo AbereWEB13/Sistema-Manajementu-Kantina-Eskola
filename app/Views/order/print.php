@@ -11,7 +11,7 @@
 
 <body>
     <div class="card-header">
-        <h3>Nota Produk</h3>
+        <h3>Nota Order</h3>
         <img src="<?= base_url(); ?>public/assets/images/logo/kantina.png" alt="Logo" />
         <h6>Manajementu Kantina Eskola</h6>
     </div>
