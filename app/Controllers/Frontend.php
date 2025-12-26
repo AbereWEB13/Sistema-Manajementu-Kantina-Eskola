@@ -19,7 +19,7 @@ class Frontend extends BaseController
 
     {
 
-        $dptD = new M_frontend();
+        $dptD = new M_Frontend();
         return view('frontend/frontend');
     }
 }
